@@ -1,0 +1,32 @@
+html, body {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.content{
+  padding-top:11vh;
+  flex:1;
+}
+
+.page-width {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.cover{
+    background-image: url(/images/cover.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 758px;
+    position:relative;
+    background-attachment: fixed;
+    z-index:1;
+
+}
+
+a {
+  text-decoration: none;
+  color: #afaeae;
+  font-family: "Nunito", sans-serif;;
+  transition:0.2s;
+}
