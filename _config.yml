@@ -1,0 +1,38 @@
+encoding: utf-8
+
+gems: [jekyll-paginate]
+
+paginate: 5
+paginate_path: "/blog/page:num"
+
+excerpt_separator: <!--more-->
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  subprojects:
+    output: true
+    permalink: /subprojects/:path/
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      type: "projects"
+    values:
+      layout: "project"
+  -
+    scope:
+      type: "subprojects"
+    values:
+      layout: "subproject"
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
